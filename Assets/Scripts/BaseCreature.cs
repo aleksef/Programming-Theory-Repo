@@ -7,8 +7,20 @@ public class BaseCreature : MonoBehaviour
     private Rigidbody baseCreatureRb;
     private Animator animator;
     private float currentSpeed = 0.0f;
-    private float walkSpeed = 3.0f;
-    private float runSpeed = 5.0f;
+
+    private float m_walkSpeed;
+    public virtual float WalkSpeed 
+    {
+        get { return m_walkSpeed; }
+        protected set { m_walkSpeed = value; }
+    }
+    private float m_runSpeed;
+    public virtual float RunSpeed
+    {
+        get { return m_runSpeed; }
+        protected set { m_runSpeed = value; }
+    }
+
 
     void Awake()
     {
@@ -38,13 +50,13 @@ public class BaseCreature : MonoBehaviour
 
     private void Walk() 
     {
-        currentSpeed = walkSpeed;
+        currentSpeed = m_walkSpeed;
         animator.SetFloat("Speed_f", 0.26f);
     }
 
     private void Run()
     {
-        currentSpeed = runSpeed;
+        currentSpeed = m_runSpeed;
         animator.SetFloat("Speed_f", 0.6f);
     }
 }
