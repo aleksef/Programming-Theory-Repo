@@ -27,7 +27,7 @@ public class BaseCreature : MonoBehaviour
 
     private void Move()
     {
-        baseCreatureRb.velocity = Vector3.forward * currentSpeed;
+        baseCreatureRb.velocity = transform.rotation * Vector3.forward * currentSpeed;
     }
 
     private void Idle()
