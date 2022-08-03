@@ -415,6 +415,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &976327282
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976327283}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976327283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976327282}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6903114, y: -6.4496937, z: 0.5944428}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1432621486
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dog_BorderCollie_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1269368310195517117, guid: ce684316a527f414abcccae465967a3c, type: 3}
+      propertyPath: m_TagString
+      value: Creature
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce684316a527f414abcccae465967a3c, type: 3}
 --- !u!1001 &1631734360926943131
@@ -957,6 +992,10 @@ PrefabInstance:
     - target: {fileID: 1631734361500122798, guid: 12dfb7f50db9df841ad9bfa36de7cfee, type: 3}
       propertyPath: m_Name
       value: Animal_Chicken_White
+      objectReference: {fileID: 0}
+    - target: {fileID: 1631734361500122798, guid: 12dfb7f50db9df841ad9bfa36de7cfee, type: 3}
+      propertyPath: m_TagString
+      value: Creature
       objectReference: {fileID: 0}
     - target: {fileID: 1631734361500281080, guid: 12dfb7f50db9df841ad9bfa36de7cfee, type: 3}
       propertyPath: m_RootOrder
@@ -1014,6 +1053,10 @@ PrefabInstance:
     - target: {fileID: 5374129524930917012, guid: 2cfc2c0e1e372cb4abd80995b5661944, type: 3}
       propertyPath: m_Name
       value: Animal_Horse_Brown
+      objectReference: {fileID: 0}
+    - target: {fileID: 5374129524930917012, guid: 2cfc2c0e1e372cb4abd80995b5661944, type: 3}
+      propertyPath: m_TagString
+      value: Creature
       objectReference: {fileID: 0}
     - target: {fileID: 5374129524931252812, guid: 2cfc2c0e1e372cb4abd80995b5661944, type: 3}
       propertyPath: m_RootOrder
@@ -1116,6 +1159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Animal_Cow_White
       objectReference: {fileID: 0}
+    - target: {fileID: 6207363925298974764, guid: c6a1063a46cea274c98ae33003f470ca, type: 3}
+      propertyPath: m_TagString
+      value: Creature
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a1063a46cea274c98ae33003f470ca, type: 3}
 --- !u!1001 &6691303179556498274
@@ -1172,6 +1219,10 @@ PrefabInstance:
     - target: {fileID: 6691303180331267397, guid: 38c93392393f40c418197384f1daa515, type: 3}
       propertyPath: m_Name
       value: SimpleFarmer_Man_01_Black
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691303180331267397, guid: 38c93392393f40c418197384f1daa515, type: 3}
+      propertyPath: m_TagString
+      value: Creature
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c93392393f40c418197384f1daa515, type: 3}
