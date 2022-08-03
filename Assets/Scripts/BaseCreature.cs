@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class BaseCreature : MonoBehaviour
 {
-    private Rigidbody baseCreatureRb;
-    private Animator animator;
+    private Rigidbody m_creatureRb;
+    public virtual Rigidbody CreatureRb
+    {
+        get { return m_creatureRb; }
+        protected set { m_creatureRb = value; }
+    }
+
+    private Animator m_creatureAnimator;
+    public virtual Animator CreatureAnimator
+    {
+        get { return m_creatureAnimator; }
+        protected set { m_creatureAnimator = value; }
+    }
+
     private float currentSpeed = 0.0f;
 
     private float m_walkSpeed;
@@ -21,14 +33,6 @@ public class BaseCreature : MonoBehaviour
         protected set { m_runSpeed = value; }
     }
 
-
-    void Awake()
-    {
-        baseCreatureRb = gameObject.GetComponent<Rigidbody>();
-        animator = gameObject.GetComponent<Animator>();
-        Idle();
-    }
-
     void Update()
     {
         if (currentSpeed != 0) 
@@ -39,24 +43,24 @@ public class BaseCreature : MonoBehaviour
 
     private void Move()
     {
-        baseCreatureRb.velocity = transform.rotation * Vector3.forward * currentSpeed;
+        m_creatureRb.velocity = transform.rotation * Vector3.forward * currentSpeed;
     }
 
-    private void Idle()
+    public void Idle()
     {
         currentSpeed = 0.0f;
-        animator.SetFloat("Speed_f", 0.0f);
+        m_creatureAnimator.SetFloat("Speed_f", 0.0f);
     }
 
-    private void Walk() 
+    public void Walk() 
     {
         currentSpeed = m_walkSpeed;
-        animator.SetFloat("Speed_f", 0.26f);
+        m_creatureAnimator.SetFloat("Speed_f", 0.26f);
     }
 
-    private void Run()
+    public void Run()
     {
         currentSpeed = m_runSpeed;
-        animator.SetFloat("Speed_f", 0.6f);
+        m_creatureAnimator.SetFloat("Speed_f", 0.6f);
     }
 }
