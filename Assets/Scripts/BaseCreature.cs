@@ -30,6 +30,12 @@ public class BaseCreature : MonoBehaviour
         baseCreatureRb.velocity = Vector3.forward * currentSpeed;
     }
 
+    private void Idle()
+    {
+        currentSpeed = 0.0f;
+        animator.SetFloat("Speed_f", 0.0f);
+    }
+
     private void Walk() 
     {
         currentSpeed = walkSpeed;
@@ -41,11 +47,4 @@ public class BaseCreature : MonoBehaviour
         currentSpeed = runSpeed;
         animator.SetFloat("Speed_f", 0.6f);
     }
-
-    private void Idle()
-    {
-        currentSpeed = 0.0f;
-        animator.SetFloat("Speed_f", 0.0f);
-    }
-
 }
