@@ -22,6 +22,13 @@ public class BaseCreature : MonoBehaviour
         protected set { m_runSpeed = value; }
     }
 
+    private GameObject m_target;
+    public virtual GameObject Target
+    {
+        get { return m_target; }
+        set { m_target = value; }
+    }
+
     void Start()
     {
         m_creatureRb = gameObject.GetComponent<Rigidbody>();
@@ -30,15 +37,31 @@ public class BaseCreature : MonoBehaviour
 
     void Update()
     {
-        if (currentSpeed != 0) 
-        {
-            Move();
-        }
+        Move();
     }
 
     private void Move()
     {
-        m_creatureRb.velocity = transform.rotation * Vector3.forward * currentSpeed;
+        if (currentSpeed != 0 && m_target != null)
+        {
+            if (Vector3.Distance(transform.position, m_target.transform.position) > 0.1f)
+            {
+                LookAtTarget();
+                m_creatureRb.velocity = transform.rotation * Vector3.forward * currentSpeed;
+            }
+            else
+            {
+                Idle();
+            }
+        }
+    }
+
+    public void LookAtTarget()
+    {
+        Vector3 targetPostition = new(m_target.transform.position.x,
+                                      transform.position.y,
+                                      m_target.transform.position.z);
+        transform.LookAt(targetPostition);
     }
 
     public void Idle()
