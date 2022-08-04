@@ -5,18 +5,7 @@ using UnityEngine;
 public class BaseCreature : MonoBehaviour
 {
     private Rigidbody m_creatureRb;
-    public virtual Rigidbody CreatureRb
-    {
-        get { return m_creatureRb; }
-        protected set { m_creatureRb = value; }
-    }
-
     private Animator m_creatureAnimator;
-    public virtual Animator CreatureAnimator
-    {
-        get { return m_creatureAnimator; }
-        protected set { m_creatureAnimator = value; }
-    }
 
     private float currentSpeed = 0.0f;
 
@@ -31,6 +20,12 @@ public class BaseCreature : MonoBehaviour
     {
         get { return m_runSpeed; }
         protected set { m_runSpeed = value; }
+    }
+
+    void Start()
+    {
+        m_creatureRb = gameObject.GetComponent<Rigidbody>();
+        m_creatureAnimator = gameObject.GetComponent<Animator>();
     }
 
     void Update()
