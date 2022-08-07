@@ -333,9 +333,10 @@ GameObject:
   - component: {fileID: 6207363925308529932}
   - component: {fileID: 6207363925298945911}
   - component: {fileID: 6207363925298945904}
+  - component: {fileID: 8585665981085978605}
   m_Layer: 0
   m_Name: Animal_Cow_White
-  m_TagString: Untagged
+  m_TagString: Cow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,6 +405,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7327da8be84272742b023e9b174663bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_target: {fileID: 0}
+  m_edibles:
+  - Carrot
+  - Banana
+--- !u!65 &8585665981085978605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207363925298974764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 32.008213, z: 49.20604}
+  m_Center: {x: 2.268189e-15, y: 15.504107, z: 0.26057297}
 --- !u!1 &6207363925298974908
 GameObject:
   m_ObjectHideFlags: 0

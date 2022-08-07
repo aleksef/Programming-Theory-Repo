@@ -1027,9 +1027,10 @@ GameObject:
   - component: {fileID: 5374129524938209372}
   - component: {fileID: 5374129524930798087}
   - component: {fileID: 5374129524930798084}
+  - component: {fileID: 6950559191975605868}
   m_Layer: 0
   m_Name: Animal_Horse_Brown
-  m_TagString: Untagged
+  m_TagString: Horse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1103,6 +1104,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4af070bc0477b43a0bd6709a6b2a46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_target: {fileID: 0}
+  m_edibles:
+  - Carrot
+--- !u!65 &6950559191975605868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5374129524930917012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.996246, y: 38.114162, z: 46.773064}
+  m_Center: {x: 0.075930946, y: 18.557074, z: 3.535604}
 --- !u!1 &5374129524930922214
 GameObject:
   m_ObjectHideFlags: 0

@@ -1340,9 +1340,10 @@ GameObject:
   - component: {fileID: 1631734361509549474}
   - component: {fileID: 1631734361500068669}
   - component: {fileID: 1631734361500068658}
+  - component: {fileID: 4889150657754402260}
   m_Layer: 0
   m_Name: Animal_Chicken_White
-  m_TagString: Untagged
+  m_TagString: Chicken
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1418,3 +1419,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19d13d6e442b8c74da06eb290d2faa66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_target: {fileID: 0}
+  m_edibles:
+  - Cookie
+--- !u!65 &4889150657754402260
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631734361500122798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.165309, y: 16.484364, z: 20.067036}
+  m_Center: {x: 0.00000066227386, y: 8.045796, z: 1.2751911}

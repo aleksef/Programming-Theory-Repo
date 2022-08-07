@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7746678684115793088}
   - component: {fileID: 7746678684116760064}
   - component: {fileID: 6484302764776516250}
+  - component: {fileID: 990815357316134615}
   m_Layer: 0
   m_Name: Food_Wine_01
-  m_TagString: Untagged
+  m_TagString: Wine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,8 +93,20 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7746678684118689984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.378026, y: 1.0329702, z: 0.40268373}
   m_Center: {x: 0.006164074, y: 0.036986113, z: -0.0061643124}
+--- !u!114 &990815357316134615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7746678684118689984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1671d5a4e83e0b4fb2f880ca2ee47d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

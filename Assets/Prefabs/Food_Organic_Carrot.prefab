@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 2541668314967990745}
   - component: {fileID: 2541668314971472575}
   - component: {fileID: 2541668314970426629}
+  - component: {fileID: -3642542010870305635}
   - component: {fileID: 6609205016802193756}
   m_Layer: 0
   m_Name: Food_Organic_Carrot
-  m_TagString: Untagged
+  m_TagString: Carrot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-3642542010870305635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541668314968261447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1671d5a4e83e0b4fb2f880ca2ee47d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &6609205016802193756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -92,7 +105,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2541668314968261447}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.26498795, y: 0.2156792, z: 0.7703972}
