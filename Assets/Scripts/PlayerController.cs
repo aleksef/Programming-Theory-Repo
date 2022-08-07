@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject[] spawnableObjects;
     private GameObject selectedObject;
 
+    [SerializeField] GameManager gameManager;
+
     private void Start()
     {
         mainCameraRb = mainCamera.GetComponent<Rigidbody>();
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(selectedObject, pointer.transform.position,
                 Quaternion.Euler(0, Random.Range(0, 359), 0));
+            gameManager.CheckForFood();
         }
     }
 
