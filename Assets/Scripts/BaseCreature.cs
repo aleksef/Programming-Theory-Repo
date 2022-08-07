@@ -98,4 +98,10 @@ public class BaseCreature : MonoBehaviour
             Idle();
         }
     }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(1))
+            Destroy(gameObject);
+    }
 }
