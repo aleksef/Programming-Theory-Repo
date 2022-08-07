@@ -43,8 +43,8 @@ public class PlayerController : MonoBehaviour
     {
         if (selectedObject != null) 
         {
-            Debug.Log("Spawn!");
-            Instantiate(selectedObject, pointer.transform.position, selectedObject.transform.rotation);
+            Instantiate(selectedObject, pointer.transform.position,
+                Quaternion.Euler(0, Random.Range(0, 359), 0));
         }
     }
 
