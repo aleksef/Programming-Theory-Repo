@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Creature
+  - Banana
+  - Bone
+  - Cookie
+  - Carrot
+  - Wine
+  - Chicken
+  - Cow
+  - Horse
+  - Dog
+  - Human
   layers:
   - Default
   - TransparentFX
