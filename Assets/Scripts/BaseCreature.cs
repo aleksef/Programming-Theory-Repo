@@ -87,7 +87,10 @@ public class BaseCreature : MonoBehaviour
     public void Run()
     {
         currentSpeed = m_runSpeed;
-        m_creatureAnimator.SetFloat("Speed_f", 0.6f);
+        if (m_creatureAnimator != null) 
+        {
+            m_creatureAnimator.SetFloat("Speed_f", 0.6f);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
