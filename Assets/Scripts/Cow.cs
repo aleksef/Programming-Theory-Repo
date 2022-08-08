@@ -11,4 +11,10 @@ public class Cow : BaseCreature
         WalkSpeed = 2.5f;
         RunSpeed = 4.0f;
     }
+
+    // POLYMORPHISM
+    public override void Greet() 
+    {
+        Debug.Log($"Moo!");
+    }
 }

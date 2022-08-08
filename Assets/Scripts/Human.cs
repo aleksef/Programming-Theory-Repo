@@ -11,4 +11,10 @@ public class Human : BaseCreature
         WalkSpeed = 3.0f;
         RunSpeed = 5.0f;
     }
+
+    // POLYMORPHISM
+    public override void Greet()
+    {
+        Debug.Log("Howdy!");
+    }
 }

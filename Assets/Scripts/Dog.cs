@@ -11,4 +11,10 @@ public class Dog : BaseCreature
         WalkSpeed = 3.0f;
         RunSpeed = 7.0f;
     }
+
+    // POLYMORPHISM
+    public override void Greet()
+    {
+        Debug.Log($"Woof!");
+    }
 }

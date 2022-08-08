@@ -104,6 +104,12 @@ public class BaseCreature : MonoBehaviour
         }
     }
 
+    // POLYMORPHISM
+    public virtual void Greet()
+    {
+        Debug.Log($"This is {this.name}");
+    }
+
     private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(1))
