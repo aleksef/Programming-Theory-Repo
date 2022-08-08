@@ -10,26 +10,28 @@ public class BaseCreature : MonoBehaviour
 
     private float currentSpeed = 0.0f;
 
+    // ENCAPSULATION
     private float m_walkSpeed;
     public virtual float WalkSpeed
     {
         get { return m_walkSpeed; }
         protected set { m_walkSpeed = value; }
     }
+    // ENCAPSULATION
     private float m_runSpeed;
     public virtual float RunSpeed
     {
         get { return m_runSpeed; }
         protected set { m_runSpeed = value; }
     }
-
+    // ENCAPSULATION
     [SerializeField] GameObject m_target;
     public virtual GameObject Target
     {
         get { return m_target; }
         set { m_target = value; }
     }
-
+    // ENCAPSULATION
     [SerializeField] List<string> m_edibles;
     public virtual List<string> Edibles
     {
