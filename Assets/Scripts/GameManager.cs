@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour
     {
         CheckForFood();
         StartCoroutine(FoodSearchCycle());
+        // POLYMORPHISM
+        foreach (BaseCreature creature in FindObjectsOfType<BaseCreature>())
+        {
+            creature.Greet();
+        }
     }
 
     public void CheckForFood()
